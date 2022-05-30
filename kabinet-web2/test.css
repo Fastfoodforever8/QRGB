@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.Btn{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid 3px #0000008a;
+    background-color: #00ffff00;
+    width: auto;
+    padding: 10px;
+    height: fit-content;
+    font-size: 0.6em;
+    color: white;
+    border-color: white;
+}
+
+.Btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+.veselej{
+    position: fixed;
+    display: block;
+    bottom: 0.1px;
+    width: auto;
+    height: 80%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+body{
+    background-color: #bbae8e;
+     background-image: url(image/testttt.png);  
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
+     width: auto;
+     background-position: center center;
+    }
+
+.board{
+    color: white;
+    font-size: 2em;
+    margin-left: 42%;
+    margin-right: 3%;
+    top: 14%;
+    background-color: #000000b3;
+    display: block;
+    position: relative;
+    width: fit-content;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+#Result{
+    opacity: 0.2;
+    display: block;
+}
+
+.score{
+    display: inline-flex;
+    position: relative;
+    margin-top: 3%;
+    height: fit-content;
+    width: fit-content;
+    background-color: #00ffff00;
+    font-size: 0.8em;
+    color: white;
+    
+}
+
+.life img{
+   /* height: 60px;
+    width: auto;
+    display: inline-block;
+    position: relative;*/
+
+    height: auto;
+    width: 9%;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.5%;
+}
+
+.life{
+   /* width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: inline-block;*/
+
+    width: 70%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.player{
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider{display: block;}
+
+@media all and (max-width: 800px){
+
+    .board{top: 6%;
+            font-size: 1.5em;
+            }
+
+    .veselej{position: fixed;}
+
+    /*.life img{height: 40px;}*/
+
+/*slider setting*/
+
+.slider {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  .btn-dis {
+    width: 100%;
+    flex-shrink: 0;
+    height: fit-content;
+    scroll-snap-align: start;
+  }
+
+  .btn-dis:hover{
+    transform: scale(1);
+  }
+
+/*slider setting*/
+}
+
+
+
+
+
