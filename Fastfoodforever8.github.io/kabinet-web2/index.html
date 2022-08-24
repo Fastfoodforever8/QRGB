@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href =""type = "image/x-icon">
+    <title>Test-js</title>
+    <link rel="stylesheet" href="test.css">
+    
+</head>
+
+<body onload="questionselect()">
+
+<img class= "veselej" src="image/veselej.png" alt="kabinet">
+
+<div class="board">
+
+    <div id="question"></div>
+
+    <div class="slider">
+        <button class="Btn btn-dis" id="Btn1" onclick="onClick(this.value)" value="A"></button>
+        <button class="Btn btn-dis" id="Btn2" onclick="onClick(this.value)" value="B"></button>
+        <button class="Btn btn-dis" id="Btn3" onclick="onClick(this.value)" value="C"></button>
+    </div>
+
+    <div class = "result" id="Result"></div>
+
+    <button class="Btn" id="Btn4" onclick="questionselect()">Další otázka</button>
+
+    <div class="player">
+        <div class="score" id="Score">Body: </div>
+        <div class="life" id="Life"><img id="life1" src="image/hearth2.png"><img id="life2" src="image/hearth2.png"><img id="life3" src="image/hearth2.png"></div>
+    </div>
+
+</div>
+
+    <script src="questions.js"></script>
+    <script src="code.js"></script>
+</body>
+</html> 
